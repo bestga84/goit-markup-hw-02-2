@@ -5,21 +5,28 @@
     --paragraph-color-font: #757575;
     --hero-color-font: #FFFFFF;
     --footer-color-font: rgba(255, 255, 255, 0.6);
+    --hero-footer-color: #2F303A;
+    --comand-color: #F5F4FA;
 
     --primary-font: "Roboto", sans-serif;
     --second-font: "Raleway", sans-serif;
 }
 
+
+
+
   
+
+
 .list {
     list-style: none;
-  }
-  
+}
+
 .link {
     text-decoration: none;
   }
 
-body {
+.body {
     color: var(--primary-color-font);
 
     font-family: var(--primary-font);
@@ -75,6 +82,15 @@ body {
     color: var(--hero-color-font);
 }
 
+.header-bg-color,
+.section-buzy-bg-color,
+.pesron-bg-color,
+.portfolio-bg-color,
+.portfolio-fon {
+    background-color: var(--hero-color-font);
+}
+
+
 .hero-text {
     font-weight: 900;
     font-size: 44px;
@@ -85,6 +101,8 @@ body {
 }
 
 .hero-btn {
+    background-color: var(--second-color-font);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -99,6 +117,11 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.hero-color,
+.footer-color {
+    background-color: var(--hero-footer-color);
 }
 
 
@@ -143,7 +166,16 @@ body {
     text-transform: uppercase;
 }
 
+.comand-bg-color {
+    background-color: var(--comand-color);
+}
 
+/* Portfolio page*/
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: var(--second-color-font);
+    cursor: pointer;
+}
 
 /* Footer */
 
@@ -176,8 +208,9 @@ body {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: var(--hero-color-font);
-  cursor: pointer;
+    background-color: var(--second-color-font);
+    color: var(--hero-color-font);
+    cursor: pointer;
 }
 
 .portfolio-names {
